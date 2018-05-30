@@ -964,6 +964,13 @@ class Employee {
 parameter to create the generic class of specific type. The T type indicates that it can refer to any type (like String, Integer, Employee etc.).The type you specify for the class, will be used to store and retrieve the data.
     * The ? (question mark) symbol represents wildcard element. It means any type. If we write <? extends Number>, it means any child class of Number e.g. Integer, Float, double etc
 </br>   
+</br>   
+</br>   
       
       
+I will be adding more questions soon! If you would like to contribute to the Android Cheat Sheet, just make a pull request!
       
+  
+  
+  
+  
