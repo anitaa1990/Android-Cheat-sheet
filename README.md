@@ -494,7 +494,8 @@ savedInstanceState.Also it won't affect the performance even if there are large 
   
   
 * <b>Arraymap/SparseArray vs HashMap in Android?</b></br>
-   * [Best article on the subject](https://android.jlelse.eu/app-optimization-with-arraymap-sparsearray-in-android-c0b7de22541a) </br>
+   * [Article 1 on the subject](https://android.jlelse.eu/app-optimization-with-arraymap-sparsearray-in-android-c0b7de22541a)
+   * [Article 2 on the subject](https://medium.com/@mohom.r/optimising-android-app-performance-with-arraymap-9296f4a1f9eb) </br>
    
    
 * <b>Android Architecture Components?</b></br>
