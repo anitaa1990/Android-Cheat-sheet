@@ -18,6 +18,7 @@ Cheat Sheet for Android Interviews
   * [Rotate an array](/src/arrays/RotateArray.java)
   * [Find the smallest common number in a given array](/src/arrays/SmallestCommonNumber.java)
   * [Find the sum of two elements in a given array](/src/arrays/SumOfTwoValues.java)
+  * [Find the minimum distance between two numbers in an array](/src/arrays/MinimumDistanceBetweenTwoNumbers.java)
   </br>
 
 
