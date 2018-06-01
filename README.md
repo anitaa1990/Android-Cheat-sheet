@@ -57,13 +57,24 @@ Cheat Sheet for Android Interviews
   
 ### Data Structure Coding Programs
 * <b>Sorting</b></br>
+   * [BubbleSort](BubbleSort.java)
+   * [InsertionSort](InsertionSort.java)
+   * [SelectionSort](SelectionSort.java)
    * [QuickSort](QuickSort.java)
+   * [MergeSort](MergeSort.java)
+     * <b>Question: Why is quicksort preferred over merge sort for sorting arrays?</b></br>
+         * Quicksort does not require any extra storage whereas merge sort requires O(n) space allocation. Allocating/de-allocating memory space can increase the run time.</br>
+     * <b>Question: Why is merge sort preferred over quicksort for sorting linked lists?</b></br>
+         * There is a difference in linked lists due to memory allocation. In linked lists we can insert items in the middle in O(n) space and time. There is no extra memory allocation required.     
    </br>
    
    
 * <b>Searching</b></br>
    * [Binary Search](BinarySearch.java)
    * [Rotated Binary Search](RotatedBinarySearch.java)
+   * [Ternary Search](TernarySearch.java)  
+     * <b>Question: Why is binary search preferred over ternary search?</b></br>
+         * When dividing an array by k ( 2(binary) or 3(ternary)), it reduces the array size to 1/k. But it increases the no of comparisons by k.
    </br>
    
    
