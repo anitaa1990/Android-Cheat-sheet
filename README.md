@@ -909,7 +909,7 @@ class Employee {
    
 * <b>Blocking Queues:</b></br>
    * A blocking queue is a queue that blocks when you try to dequeue from it and the queue is empty, or if you try to enqueue items to it and the queue is already full. A thread trying to dequeue from an empty queue is blocked until some other thread inserts an item into the queue. A thread trying to enqueue an item in a full queue is blocked until some other thread makes space in the queue. 
-   * [Example on implementing a blocking queue](BlockingQueue.java)</br>
+   * [Example on implementing a blocking queue](/src/queue/BlockingQueue.java)</br>
    
    
 * <b>Difference between stacks & queues?</b></br>
@@ -920,8 +920,8 @@ class Employee {
    
 * <b>What is a deaklock in Java</b></br>
    * A deadlock occurs when a thread enters a waiting state because a requested system resource is held by another waiting process, which in turn is waiting for another resource held by another waiting process.
-   * [Example on how deadlock occurs](ThreadLockDemo.java)
-   * [Example on how to prevent deadlock](ThreadLockFixedDemo.java)</br>
+   * [Example on how deadlock occurs](/src/deadlock/ThreadLockDemo.java)
+   * [Example on how to prevent deadlock](/src/deadlock/ThreadLockFixedDemo.java)</br>
    
    
    
