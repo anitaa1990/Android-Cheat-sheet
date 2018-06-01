@@ -7,6 +7,14 @@ public class TernarySearch {
      * Ternary Search using recursion
      * Time complexity - Olog(n)
      * Memory Complexity - O(logn) - as it will consume memory on the stack
+     *
+     * Ternary search is a fast search algorithm which works on the principle of divide & conquer.
+     * It splits an array into three smaller arrays by finding the median value in the array.
+     * The two different medians are found by adding the median value to the lowerIndex and by subtracting the upperIndex
+     * by the median. If the value is greater than the median then the lower bound of the array is increased and if the value is less than the median then the upper bound of the array is decreased.
+     * It can be used only for sorted arrays.
+     * Ternary search reduces the array into half thus reducing the count of comparisons to be made
+     *
      * */
     public static int ternarySearch(int n, int[] arr, int lowerIndex, int upperIndex) {
         if(n < arr[lowerIndex] || n > arr[upperIndex]) return -1;
