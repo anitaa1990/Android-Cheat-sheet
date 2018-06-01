@@ -11,57 +11,57 @@ Cheat Sheet for Android Interviews
 
 ### Common Coding Programs
 * <b>Arrays</b></br>
-  * [Find Maximum Sell Profit](FindMaximumSellProfit.java)
-  * [Find Low & High Index of a key from a given array](LowHighIndex.java)
-  * [Merge Overlapping Intervals](MergeOverlappingIntervals.java)
-  * [Move all zeros in an array to the Left or Right](MoveZeroesToLeft.java)
-  * [Rotate an array](RotateArray.java)
-  * [Find the smallest common number in a given array](SmallestCommonNumber.java)
-  * [Find the sum of two elements in a given array](SumOfTwoValues.java)
+  * [Find Maximum Sell Profit](/src/arrays/FindMaximumSellProfit.java)
+  * [Find Low & High Index of a key from a given array](/src/arrays/LowHighIndex.java)
+  * [Merge Overlapping Intervals](/src/arrays/MergeOverlappingIntervals.java)
+  * [Move all zeros in an array to the Left or Right](/src/arrays/MoveZeroesToLeft.java)
+  * [Rotate an array](/src/arrays/RotateArray.java)
+  * [Find the smallest common number in a given array](/src/arrays/SmallestCommonNumber.java)
+  * [Find the sum of two elements in a given array](/src/arrays/SumOfTwoValues.java)
   </br>
 
 
 
 * <b>Dynamic Programming</b></br>
-   * [Fibonacci Series](FibonacciSeries.java)
-   * [Given an array, find the contiguous subarray with the largest sum](LargestSumSubarray.java)
-   * [Find the maximum sum of a subsequence such that no consecutive elements are part of the subsequence](MaxSumSubsequenceOfNonadjacentElements.java)
+   * [Fibonacci Series](/src/dynamicprogramming/FibonacciSeries.java)
+   * [Given an array, find the contiguous subarray with the largest sum](/src/dynamicprogramming/LargestSumSubarray.java)
+   * [Find the maximum sum of a subsequence such that no consecutive elements are part of the subsequence](/src/dynamicprogramming/MaxSumSubsequenceOfNonadjacentElements.java)
    </br>
    
    
    
 * <b>Queues</b></br>
-   * [Find the Maximum in a Sliding Window](Dequeue.java)
-   * [Implement a queue using stack](QueuesUsingStack.java)
+   * [Find the Maximum in a Sliding Window](/src/queue/Dequeue.java)
+   * [Implement a queue using stack](/src/queue/QueuesUsingStack.java)
    </br>
    
    
    
 * <b>Stacks</b></br>
-   * [Evaluate an expression](EvaluationExpression.java)
-   * [Implement a stack using queues](StacksUsingQueues.java)
+   * [Evaluate an expression](/src/stacks/EvaluationExpression.java)
+   * [Implement a stack using queues](/src/stacks/StacksUsingQueues.java)
    </br>
 
 
 
 * <b>Strings</b></br>
-   * [Palindrone String](PalindroneStrings.java)
-   * [Regular Expression](RegularExpression.java)
-   * [Remove Duplicates](RemoveDuplicates.java)
-   * [Remove White Spaces](RemoveWhiteSpaces.java)
-   * [Remove a String](ReverseString.java)
-   * [String Segmentation](StringSegmentation.java)   
+   * [Palindrone String](/src/strings/PalindroneStrings.java)
+   * [Regular Expression](/src/strings/RegularExpression.java)
+   * [Remove Duplicates](/src/strings/RemoveDuplicates.java)
+   * [Remove White Spaces](/src/strings/RemoveWhiteSpaces.java)
+   * [Remove a String](/src/strings/ReverseString.java)
+   * [String Segmentation](/src/strings/StringSegmentation.java)   
    </br>
    
   
   
 ### Data Structure Coding Programs
 * <b>Sorting</b></br>
-   * [BubbleSort](BubbleSort.java)
-   * [InsertionSort](InsertionSort.java)
-   * [SelectionSort](SelectionSort.java)
-   * [QuickSort](QuickSort.java)
-   * [MergeSort](MergeSort.java)
+   * [BubbleSort](/src/sort/BubbleSort.java)
+   * [InsertionSort](/src/sort/InsertionSort.java)
+   * [SelectionSort](/src/sort/SelectionSort.java)
+   * [QuickSort](/src/sort/QuickSort.java)
+   * [MergeSort](/src/sort/MergeSort.java)
      * <b>Question: Why is quicksort preferred over merge sort for sorting arrays?</b></br>
          * Quicksort does not require any extra storage whereas merge sort requires O(n) space allocation. Allocating/de-allocating memory space can increase the run time.</br>
      * <b>Question: Why is merge sort preferred over quicksort for sorting linked lists?</b></br>
@@ -70,9 +70,9 @@ Cheat Sheet for Android Interviews
    
    
 * <b>Searching</b></br>
-   * [Binary Search](BinarySearch.java)
-   * [Rotated Binary Search](RotatedBinarySearch.java)
-   * [Ternary Search](TernarySearch.java)  
+   * [Binary Search](/src/search/BinarySearch.java)
+   * [Rotated Binary Search](/src/search/RotatedBinarySearch.java)
+   * [Ternary Search](/src/search/TernarySearch.java)  
      * <b>Question: Why is binary search preferred over ternary search?</b></br>
          * When dividing an array by k ( 2(binary) or 3(ternary)), it reduces the array size to 1/k. But it increases the no of comparisons by k.
    </br>
