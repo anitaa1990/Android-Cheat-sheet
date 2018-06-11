@@ -19,6 +19,10 @@ Cheat Sheet for Android Interviews
   * [Find the smallest common number in a given array](/src/arrays/SmallestCommonNumber.java)
   * [Find the sum of two elements in a given array](/src/arrays/SumOfTwoValues.java)
   * [Find the minimum distance between two numbers in an array](/src/arrays/MinimumDistanceBetweenTwoNumbers.java)
+  * [Find the maximum difference between the values in an array such that the largest values always comes after the smallest value](/src/arrays/FindMaxDifference.java)
+  * [Find second largest element in an array](/src/arrays/FindSecondLargestElement.java)
+  * [Find the 3 numbers in an array that produce the max product](/src/arrays/FindMaxProduct.java)
+  * [Find missing number from an array](/src/arrays/FindMissingNumber.java)  
   </br>
 
 
@@ -35,24 +39,50 @@ Cheat Sheet for Android Interviews
    * [Find the Maximum in a Sliding Window](/src/queue/Dequeue.java)
    * [Implement a queue using stack](/src/queue/QueuesUsingStack.java)
    </br>
+
+
+   
+* <b>LinkedList</b></br>
+   * [Find the Middle Node of a Linked List](/src/linkedlist/FindMiddleNode.java)
+   * [Find the Nth Node of a Linked List](/src/linkedlist/FindNthNode.java)
+   * [Check if a Linked List is cyclic](/src/linkedlist/CheckIfContainsCycle.java)
+   </br>   
    
    
    
 * <b>Stacks</b></br>
    * [Evaluate an expression](/src/stacks/EvaluationExpression.java)
    * [Implement a stack using queues](/src/stacks/StacksUsingQueues.java)
+   * [Check if paranthesis are equal](/src/stacks/EqualDelimiters.java)
+   * [Tower of Hanoi](/src/stacks/TowerOfHanoi.java)
+   * [ReverseAStack](/src/stacks/ReverseStack.java)
    </br>
 
 
 
 * <b>Strings</b></br>
+   * [Reverse String](/src/strings/ReverseString.java)
    * [Palindrone String](/src/strings/PalindroneStrings.java)
    * [Regular Expression](/src/strings/RegularExpression.java)
    * [Remove Duplicates](/src/strings/RemoveDuplicates.java)
    * [Remove White Spaces](/src/strings/RemoveWhiteSpaces.java)
    * [Remove a String](/src/strings/ReverseString.java)
-   * [String Segmentation](/src/strings/StringSegmentation.java)   
+   * [String Segmentation](/src/strings/StringSegmentation.java)
+   * [Find next highest permutation of a given string](/src/strings/NextHighestPermutation.java)
+   * [Check if two strings are anagrams](/src/strings/CheckIfAnagram.java)   
    </br>
+   
+   
+* <b>Integers</b></br>
+   * [Reverse Integer](/src/math/ReverseInteger.java)
+   * [Find sum of digits of an integer](/src/math/FindSumOfInteger.java)   
+   * [Find Next highest Number from a Integer](/src/math/NextHighestNumber.java)
+   * [Check if it is an Armstrong number](/src/math/CheckIfArmstrongNumber.java)
+   * [Find the factorial of a number](/src/math/FindFactorial.java)
+   * [Print all prime numbers upto the given number](/src/math/PrintPrimeNumbers.java)
+   * [Find all the prime factors of a given integer](/src/math/FindPrimeFactors.java)
+   * [Check if a given number is binary](/src/math/CheckIfBinary.java)   
+   </br>   
    
   
   
