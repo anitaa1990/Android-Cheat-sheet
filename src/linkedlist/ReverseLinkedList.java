@@ -3,6 +3,15 @@ package linkedlist;
 
 public class ReverseLinkedList {
 
+    /*
+     * Runtime Complexity:
+     * Linear, O(n).
+     * As we can reverse the linked list in a single pass.
+     *
+     * Memory Complexity:
+     * Constant, O(1).
+     * As no extra memory is required for the iterative solution.
+     * */
 
     private static class LinkedList {
 
