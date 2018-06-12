@@ -44,6 +44,7 @@ Cheat Sheet for Android Interviews
    
 * <b>LinkedList</b></br>
    * [Reverse a Linked List](/src/linkedlist/ReverseLinkedList.java)
+   * [Remove duplicates from a Linked List](/src/linkedlist/RemoveDuplicates.java)   
    * [Find the Middle Node of a Linked List](/src/linkedlist/FindMiddleNode.java)
    * [Find the Nth Node of a Linked List](/src/linkedlist/FindNthNode.java)
    * [Check if a Linked List is cyclic](/src/linkedlist/CheckIfContainsCycle.java)
