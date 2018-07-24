@@ -547,6 +547,15 @@ savedInstanceState.Also it won't affect the performance even if there are large 
    * [Article 2 on the subject](https://medium.com/@mohom.r/optimising-android-app-performance-with-arraymap-9296f4a1f9eb) </br>
    
    
+* <b>How to reduce apk size?</b></br>
+   * Enable proguard in your project by adding following lines to your release build type.
+   * Enable shrinkResources.
+   * Strip down all the unused locale resources by adding required resources name in “resConfigs”.
+   * Convert all the images to the webp or vector drawables.
+   * [Article on the subject](https://medium.com/exploring-code/how-you-can-decrease-application-size-by-60-in-only-5-minutes-47eff3e7874e)
+   </br>   
+   
+   
 * <b>How to reduce build time of an Android app?</b></br>
    * Check out this awesome [article](https://medium.com/exploring-code/how-to-decrease-your-gradle-build-time-by-65-310b572b0c43) on it. 
    * What I got from the article: A few commands we can add to the gradle.properties file:
