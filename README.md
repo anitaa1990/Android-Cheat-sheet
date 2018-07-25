@@ -77,6 +77,7 @@ Cheat Sheet for Android Interviews
    * [Solve Boggle](/src/backtracks/Boggle.java)
    * [Print paranthesis combination for a given value](/src/backtracks/Parenthesis.java)
    * [Solve N queen problem](/src/backtracks/NQueenProblem.java)
+   * [find all the subsets of the given array that sum up to the number K](/src/backtracks/KSumSubsets.java)
    </br>
    
    
