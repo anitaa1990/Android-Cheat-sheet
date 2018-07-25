@@ -31,6 +31,9 @@ Cheat Sheet for Android Interviews
    * [Fibonacci Series](/src/dynamicprogramming/FibonacciSeries.java)
    * [Given an array, find the contiguous subarray with the largest sum](/src/dynamicprogramming/LargestSumSubarray.java)
    * [Find the maximum sum of a subsequence such that no consecutive elements are part of the subsequence](/src/dynamicprogramming/MaxSumSubsequenceOfNonadjacentElements.java)
+   * [Given a score "n", find the total number of ways score "n" can be reached](/src/dynamicprogramming/GameScoring.java)
+   * [Compute Levenshtein distance between two strings](/src/dynamicprogramming/LevenshteinDistance.java)
+   * [Given coin denominations and the total amount, find out the number​ of ways to make the change](/src/dynamicprogramming/CoinChangingProblem.java)   
    </br>
    
    
