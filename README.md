@@ -50,7 +50,15 @@ Cheat Sheet for Android Interviews
    * [Find the Nth Node of a Linked List](/src/linkedlist/FindNthNode.java)
    * [Check if a Linked List is cyclic](/src/linkedlist/CheckIfContainsCycle.java)
    * [Insertion Sort of a Linked List](/src/linkedlist/InsertSortLinkedList.java)
-   * [Intersection Point of Two Lists](/src/linkedlist/IntersectionPoints.java)   
+   * [Intersection Point of Two Lists](/src/linkedlist/IntersectionPoints.java)
+   * [Nth from last node](/src/linkedlist/NthFromLastNode.java)
+   * [Swap Nth Node with Head](/src/linkedlist/SwapNthNodeWithHead.java)
+   * [Merge Two Sorted Linked Lists](/src/linkedlist/MergeLinkedList.java)
+   * [Sorting LinkedList using merge sort](/src/linkedlist/MergeSortList.java)
+   * [Reverse nodes at even indices](/src/linkedlist/ReverseEvenNodes.java)
+   * [Rotate linked list by n](/src/linkedlist/RotateLinkedList.java)
+   * [Reverse every 'k' elements in a linked list](/src/linkedlist/ReversekElements.java)
+   * [Add the head pointers of two linked lists](/src/linkedlist/AddTwoIntegers.java)   
    </br>   
    
    
