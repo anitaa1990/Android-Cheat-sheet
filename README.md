@@ -116,6 +116,14 @@ Cheat Sheet for Android Interviews
    * [Check if a given number is binary](/src/math/CheckIfBinary.java)   
    </br>   
    
+   
+* <b>Miscellaneous</b></br>
+   * [Find three integers in the array with sum equal to the given value](/src/misc/SumOfThreeValues.java)
+   * [Find position of a given key in 2D matrix](/src/misc/SearchMatrix.java)
+   * [Determine the host byte order of any system](/src/misc/HostByteOrder.java)
+   * [Find the point that requires the least total distance covered by all the ​people to meet at that point](/src/misc/ClosestMeetingPoint.java)
+   * [Given a two dimensional array, if any element in it is zero make its whole row and column zero](/src/misc/SumOfThreeValues.java)
+   </br>   
   
   
 ### Data Structure Coding Programs
