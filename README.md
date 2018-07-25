@@ -73,11 +73,18 @@ Cheat Sheet for Android Interviews
    
    
 
+* <b>Back Tracking</b></br>
+   * [Solve Boggle](/src/backtracks/Boggle.java)
+   * [Print paranthesis combination for a given value](/src/backtracks/Parenthesis.java)
+   * [Solve N queen problem](/src/backtracks/NQueenProblem.java)
+   </br>
+   
+   
 * <b>Graphs</b></br>
    * [Clone a Directed Graph](/src/graphs/CloneDirectedGraph.java)
    * [Minimum Spanning Tree](/src/graphs/MinimumSpanningTree.java)
    * [Form circular chain by given list of words](/src/graphs/WordChaining.java)   
-   </br>
+   </br>   
 
 
 
