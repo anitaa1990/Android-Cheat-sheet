@@ -113,7 +113,16 @@ Cheat Sheet for Android Interviews
    * [Find the factorial of a number](/src/math/FindFactorial.java)
    * [Print all prime numbers upto the given number](/src/math/PrintPrimeNumbers.java)
    * [Find all the prime factors of a given integer](/src/math/FindPrimeFactors.java)
-   * [Check if a given number is binary](/src/math/CheckIfBinary.java)   
+   * [Check if a given number is binary](/src/math/CheckIfBinary.java)
+   * [Find kth permutation](/src/math/KthPermutation.java)
+   * [Integer Division](/src/math/IntegerDivision.java)
+   * [Find Pythagorean Triplets](/src/math/FindPythagoreanTriplets.java)
+   * [Print all possible sum combinations using positive integers](/src/math/SumCombinations.java)
+   * [Find Missing Number](/src/math/FindMissingNumber.java)   
+   * [Find all subsets of a given set of integers](/src/math/IntegerSubsets.java)
+   * [Given an input string, determine if it makes a valid number](/src/math/NumberValidity.java)
+   * [Calculate 'x' raised to the power 'n'](/src/math/PowerOfNumber.java)
+   * [Calculate square root of a number](/src/math/CalculateRoot.java)
    </br>   
    
    
