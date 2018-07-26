@@ -88,8 +88,25 @@ Cheat Sheet for Android Interviews
    * [Clone a Directed Graph](/src/graphs/CloneDirectedGraph.java)
    * [Minimum Spanning Tree](/src/graphs/MinimumSpanningTree.java)
    * [Form circular chain by given list of words](/src/graphs/WordChaining.java)   
-   </br>   
-
+   </br> 
+   
+   
+* <b>Trees</b></br>
+   * [Implements an InOrder Iterator on a Binary Tree](/src/trees/BinaryTreeIterator.java)
+   * [Convert a binary tree to a doubly linked list](/src/trees/BinaryTreeToLinkedList.java)
+   * [Connect a sibling pointer of a binary tree to next node in the same level](/src/trees/ConnectAllSiblings.java)
+   * [Given a binary tree, connect its siblings at each level](/src/trees/ConnectSiblings.java)
+   * [Delete any subtrees whose nodes sum up to zero](/src/trees/DeleteZeroSumSubTrees.java)
+   * [Given roots of two binary trees, determine if these trees are identical](/src/trees/IdenticalBinaryTree.java)
+   * [Find the Inorder successor of a node in binary Search Tree](/src/trees/InOrderSuccessor.java)
+   * [Algorithm to traverse the tree inorder](/src/trees/InOrderTraversal.java)
+   * [Check if a given tree is a binary search tree](/src/trees/IsBST.java)
+   * [Display node values at each level in a binary tree](/src/trees/LevelOrderTraversal.java)
+   * [Swap the 'left' and 'right' children for each node in a binary tree](/src/trees/MirrorBinaryTreeNodes.java)
+   * [Find nth highest node in a Binary Search Tree](/src/trees/NthHighestBST.java)
+   * [Print nodes forming the boundary of a Binary Search Tree](/src/trees/PrintTreePerimeter.java)
+   * [Serialize binary tree to a file and then deserialize back to tree](/src/trees/SerializeBinaryTree.java)   
+   </br>
 
 
 * <b>Strings</b></br>
