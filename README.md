@@ -140,6 +140,7 @@ Cheat Sheet for Android Interviews
    * [Given an input string, determine if it makes a valid number](/src/math/NumberValidity.java)
    * [Calculate 'x' raised to the power 'n'](/src/math/PowerOfNumber.java)
    * [Calculate square root of a number](/src/math/CalculateRoot.java)
+   * [Minimum Number of Platforms Required for a Railway/Bus Station](/src/math/MinimumPlatforms.java)   
    </br>   
    
    
