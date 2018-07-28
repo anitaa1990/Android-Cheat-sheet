@@ -272,7 +272,7 @@ Cheat Sheet for Android Interviews
   
   
  * <b>How to prevent the data from reloading and resetting when the screen is rotated?</b></br>
-   * The most basic approach is to add an element attribute tag android:configChanges inside the activity tag in the AndroidManifest.xml.  ```android:configChanges="orientation|screenSize"``` </br>
+   * The most basic approach is to add an element attribute tag android:configChanges inside the activity tag in the AndroidManifest.xml.  ```android:configChanges="orientation|screenSize"```. But the cleaner thing to do is to use ```Onsaveinstancestate``` to save the data and retrieve it when onCreate is called again. </br>
   
   
 * <b>Mention two ways to clear the back stack of Activities when a new Activity is called using intent</b></br>
