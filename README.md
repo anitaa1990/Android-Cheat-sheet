@@ -217,11 +217,12 @@ Cheat Sheet for Android Interviews
 
 * <b>What is the Android Application Architecture?</b></br>
     * Android application architecture has the following components:</br>
-    a. Services − It will perform background functionalities</br>
-    b. Intent − It will perform the inter connection between activities and the data passing mechanism</br>
-    c. Resource Externalization − strings and graphics</br>
-    d. Notification − light,sound,icon,notification,dialog box,and toast</br>
-    e. Content Providers − It will share the data between applications</br>
+    a. Activities - Provides the window in which the app draws its UI</br>
+    b. Services − It will perform background functionalities</br>
+    c. Intent − It will perform the inter connection between activities and the data passing mechanism</br>
+    d. Resource Externalization − strings and graphics</br>
+    e. Notification − light,sound,icon,notification,dialog box,and toast</br>
+    f. Content Providers − It will share the data between applications</br>
     
   
 * <b>Describe activities</b></br>
