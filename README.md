@@ -262,10 +262,17 @@ Cheat Sheet for Android Interviews
   
   
  * <b>Launch modes in Android?</b></br>
-   * <b>Standard</b>: When an activity is launched, it will create a new instance of the activity and it be added separately to the backstack.
-   * <b>SingleTop</b>: It is the same as the standard, except if there is a previous instance of the activity that exists in the stack, then it will not create a new instance but rather send the intent to the existing instance of the activity.
-   * <b>SingleTask</b>: The activity will have only one instance. So if the activity is already in the task, the intent will be redirected to onNewIntent() else a new instance will be created.
-   * <b>SingleInstance</b>: Same as single task but the system does not launch any activities in the same task as this activity. If new activities are launched, they are done so in a separate task.</br>
+   * <b>Standard</b>: It creates a new instance of an activity in the task from which it was started. Multiple instances of the activity can be created and multiple instances can be added to the same or different tasks. 
+     * Example: Suppose there is an activity stack of A -> B -> C. Now if we launch B again with the launch mode as “standard”, the new stack will be A -> B -> C -> B.
+   * <b>SingleTop</b>: It is the same as the standard, except if there is a previous instance of the activity that exists in the top of the stack, then it will not create a new instance but rather send the intent to the existing instance of the activity. 
+     * Example: Suppose there is an activity stack of A -> B. Now if we launch C with the launch mode as “singleTop”, the new stack will be A -> B -> C as usual. 
+     * Now if there is an activity stack of A -> B -> C. If we launch C again with the launch mode as “singleTop”, the new stack will still be A -> B -> C.
+   * <b>SingleTask</b>: A new task will always be created and a new instance will be pushed to the task as the root one. So if the activity is already in the task, the intent will be redirected to onNewIntent() else a new instance will be created. At a time only one instance of activity will exist. 
+     * Example: Suppose there is an activity stack of A -> B -> C -> D. Now if we launch D with the launch mode as “singleTask”, the new stack will be A -> B -> C -> D as usual. 
+     * Now if there is an activity stack of A -> B -> C -> D.  If we launch activity B again with the launch mode as “singleTask”, the new activity stack will be A -> B. Activities C and D will be destroyed.
+   * <b>SingleInstance</b>: Same as single task but the system does not launch any activities in the same task as this activity. If new activities are launched, they are done so in a separate task. 
+     * Eg: Suppose there is an activity stack of A -> B -> C -> D. If we launch activity B again with the launch mode as “singleTask”, the new activity stack will be: 
+     * Task1 — A -> B -> C  and Task2 — D</br>
  
   
  * <b>How does the activity respond when the user rotates the screen?</b></br>
@@ -273,7 +280,10 @@ Cheat Sheet for Android Interviews
   
   
  * <b>How to prevent the data from reloading and resetting when the screen is rotated?</b></br>
-   * The most basic approach is to add an element attribute tag android:configChanges inside the activity tag in the AndroidManifest.xml.  ```android:configChanges="orientation|screenSize"```. But the cleaner thing to do is to use ```Onsaveinstancestate``` to save the data and retrieve it when onCreate is called again. </br>
+   * The most common approach these days would be to use a combination of ViewModels and onSaveInstanceState(). So how we do we that?
+   * Basics of [ViewModel](https://developer.android.com/reference/android/arch/lifecycle/ViewModel): A ViewModel is LifeCycle-Aware. In other words, a ViewModel will not be destroyed if its owner is destroyed for a configuration change (e.g. rotation). The new instance of the owner will just re-connected to the existing ViewModel. So if you rotate an Activity three times, you have just created three different Activity instances, but you only have one ViewModel.
+   * So the common practice is to store data in the ViewModel class (since it persists data during configuration changes) and use OnSaveInstanceState to store small amounts of UI data.
+   * For instance, let’s say we have a search screen and the user has entered a query in the Edittext. This results in a list of items being displayed in the RecyclerView. Now if the screen is rotated, the ideal way to prevent resetting of data would be to store the list of search items in the ViewModel and the query text user has entered in the OnSaveInstanceState method of the activity.</br>
   
   
 * <b>Mention two ways to clear the back stack of Activities when a new Activity is called using intent</b></br>
@@ -296,7 +306,10 @@ Cheat Sheet for Android Interviews
   
   
 * <b>Describe services</b></br>
-  * Service is a component that is used to perform operations on the background such as playing music, handle network transactions. Services can run in the background even in the application is destroyed.</br>
+  * A Service is an application component that can perform long-running operations in the background, and it doesn't provide a user interface. It can run in the background, even when the user is not interacting with your application. These are the three different types of services:
+    * Foreground Service: A foreground service performs some operation that is noticeable to the user. For example, we can use a foreground service to play an audio track. A [Notification](https://developer.android.com/guide/topics/ui/notifiers/notifications.html) must be displayed to the user.
+    * Background Service: A background service performs an operation that isn’t directly noticed by the user. In Android API level 26 and above, there are restrictions to using background services and it is recommended to use [WorkManager](https://developer.android.com/topic/libraries/architecture/workmanager) in these cases.
+    * Bound Service: A service is bound when an application component binds to it by calling bindService(). A bound service offers a client-server interface that allows components to interact with the service, send requests, receive results. A bound service runs only as long as another application component is bound to it.</br>
   
   
 * <b>Difference between Service & Intent Service</b></br>
@@ -386,7 +399,7 @@ A bound service is a service that can be used not only by components running in 
   
 * <b>How would you update the UI of an activity from a background service</b></br>
   * We need to register a LocalBroadcastReceiver in the activity. And send a broadcast with the data using intents from the background service. As long as the activity is in the foreground, the UI will be updated from the background. Ensure to unregister the broadcast receiver in the onStop() method of the activity to avoid memory leaks. 
-We can also register a Handler and pass data using Handlers.</br>
+We can also register a Handler and pass data using Handlers. I have detailed a sample implementation on this. You can check it out [here](https://medium.com/@anitaa_1990/how-to-update-an-activity-from-background-service-or-a-broadcastreceiver-6dabdb5cef74)</br>
 
 
 
@@ -400,7 +413,8 @@ We can also register a Handler and pass data using Handlers.</br>
 
 * <b>What is a Sticky Intent?</b></br>
   * Sticky Intents allows communication between a function and a service. 
-  * ```sendStickyBroadcast()``` performs a sendBroadcast(Intent) known as sticky, i.e. the Intent you are sending stays around after the broadcast is complete, so that others can quickly retrieve that data through the return value of ```registerReceiver(BroadcastReceiver, IntentFilter)```.</br>
+  * ```sendStickyBroadcast()``` performs a sendBroadcast(Intent) known as sticky, i.e. the Intent you are sending stays around after the broadcast is complete, so that others can quickly retrieve that data through the return value of ```registerReceiver(BroadcastReceiver, IntentFilter)```.
+  * For example, if you take an intent for ACTION_BATTERY_CHANGED to get battery change events: When you call registerReceiver() for that action — even with a null BroadcastReceiver — you <b>get the Intent that was last Broadcast for that action</b>. Hence, you can use this to find the state of the battery without necessarily registering for all future state changes in the battery.</br>
   
   
 
@@ -444,7 +458,9 @@ We can also register a Handler and pass data using Handlers.</br>
   
   
 * <b>Difference between adding/replacing fragment in backstack?</b></br>
-  * During replace, when back is clicked, the view is re-created. During add, fragment is added to backstack</br>
+  * <b>replace</b> removes the existing fragment and adds a new fragment. This means when you press back button the fragment that got replaced will be created with its onCreateView being invoked.
+  * <b>add</b> retains the existing fragments and adds a new fragment that means existing fragment will be active and they wont be in ‘paused’ state hence when a back button is pressed onCreateView is not called for the existing fragment(the fragment which was there before new fragment was added).
+  * In terms of fragment’s life cycle events onPause, onResume, onCreateView and other life cycle events will be invoked in case of replace but they wont be invoked in case of add.</br>
   
   
 * <b>Why is it recommended to use only the default constructor to create a Fragment?</b></br>
@@ -465,9 +481,9 @@ We can also register a Handler and pass data using Handlers.</br>
   * By default, Fragments are destroyed and recreated along with their parent Activity’s when a configuration change occurs. Calling ```setRetainInstance(true)``` allows us to bypass this destroy-and-recreate cycle, signaling the system to retain the current instance of the fragment when the activity is recreated.</br>
   
   
-* <b>Difference between FragmentAdapter vs FragmentStateAdapter?</b></br>
-  * <b>FragmentAdapter</b>: the fragment of each page the user visits will be stored in memory, although the view will be destroyed. So when the page is visible again, the view will be recreated but the fragment instance is not recreated. This can result in a significant amount of memory being used. FragmentPagerAdapter should be used when we need to store the whole fragment in memory. FragmentPagerAdapter calls ```detach(Fragment)``` on the transaction instead of ```remove(Fragment)```.
-  * <b>FragmentStateAdapter</b>:  the fragment instance is destroyed when it is not visible to the User, except the saved state of the fragment. This results in using only a small amount of Memory and can be useful for handling larger data sets. Should be used when we have to use dynamic fragments, like fragments with widgets, as their data could be stored in the 
+* <b>Difference between FragmentPagerAdapter vs FragmentStatePagerAdapter?</b></br>
+  * <b>FragmentPagerAdapter</b>: the fragment of each page the user visits will be stored in memory, although the view will be destroyed. So when the page is visible again, the view will be recreated but the fragment instance is not recreated. This can result in a significant amount of memory being used. FragmentPagerAdapter should be used when we need to store the whole fragment in memory. FragmentPagerAdapter calls ```detach(Fragment)``` on the transaction instead of ```remove(Fragment)```.
+  * <b>FragmentStatePagerAdapter</b>:  the fragment instance is destroyed when it is not visible to the User, except the saved state of the fragment. This results in using only a small amount of Memory and can be useful for handling larger data sets. Should be used when we have to use dynamic fragments, like fragments with widgets, as their data could be stored in the 
 savedInstanceState.Also it won't affect the performance even if there are large number of fragments.</br>  
   
   
@@ -505,7 +521,8 @@ savedInstanceState.Also it won't affect the performance even if there are large 
    
 * <b>What is ConstraintLayout?</b></br>
    * It allows you to create large and complex layouts with a flat view hierarchy (no nested view groups). It's similar to RelativeLayout in that all views are laid out according to relationships between sibling views and the parent layout, but it's more flexible than RelativeLayout and easier to use with Android Studio's Layout Editor.
-   * [Sample Implementation](https://github.com/anitaa1990/ConstraintLayout-Sample) </br>
+   * [Sample Implementation](https://github.com/anitaa1990/ConstraintLayout-Sample) 
+   * You can read more about how to implement a simple app with ConstraintLayout [here](https://android.jlelse.eu/learning-to-implement-constraintlayout-in-android-8ddc69fe0a1a), by yours truly :)</br>
    
    
 * <b>When might you use a FrameLayout?</b></br>
