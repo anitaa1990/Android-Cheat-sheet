@@ -1040,7 +1040,7 @@ class Employee {
 </br>
 
    
-* <b>What is a deaklock in Java</b></br>
+* <b>What is a deadlock in Java</b></br>
    * A deadlock occurs when a thread enters a waiting state because a requested system resource is held by another waiting process, which in turn is waiting for another resource held by another waiting process.
    * [Example on how deadlock occurs](/src/deadlock/ThreadLockDemo.java)
    * [Example on how to prevent deadlock](/src/deadlock/ThreadLockFixedDemo.java)</br>
