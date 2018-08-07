@@ -677,6 +677,12 @@ savedInstanceState.Also it won't affect the performance even if there are large 
    * <b>MVVM</b>: Model-View-ViewModel Architecture. The Model comprises data, tools for data processing, business logic.  The View Model is responsible for wrapping the model data and preparing the data for the view. IT also provides a hook to pass events from the view to the model.  [Sample Implementation](https://github.com/anitaa1990/Trailers)</br></br>
   
   
+* <b>S.O.L.I.D Principles in Android development</b></br>
+   * [Answer](https://github.com/anitaa1990/Today-I-Learned/blob/master/android/solid_principle.md)</br>  
+  
+  </br></br>
+  
+  
   
 ### Java Interview Questions  
 * <b>Why is Java said to be platform independent?</b></br>
@@ -1116,7 +1122,6 @@ parameter to create the generic class of specific type. The T type indicates tha
 </br>   
 </br>   
 </br>   
-      
       
 I will be adding more questions soon! If you would like to contribute to the Android Cheat Sheet, just make a pull request!
       
