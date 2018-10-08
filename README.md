@@ -225,11 +225,8 @@ Cheat Sheet for Android Interviews
     f. Content Providers − It will share the data between applications</br>
     
 * <b>What is Manifest file and R.java file in Android?</b></br>
-    Manifest</br?>
-    Every application must have an AndroidManifest.xml file (with precisely that name) in its root directory. The       manifest presents essential information about the application to the Android system, information the system must have before it can run any of the application's code. It contains information of your package, including components of the application such as activities, services, broadcast receivers, content providers etc.</br></br>
-
-    R.Java</br>
-    It is an auto-generated file by aapt (Android Asset Packaging Tool) that contains resource IDs for all the resources of res/ directory. </br>
+    * <b>Manifest</b>: Every application must have an AndroidManifest.xml file (with precisely that name) in its root directory. The manifest presents essential information about the application to the Android system, information the system must have before it can run any of the application's code. It contains information of your package, including components of the application such as activities, services, broadcast receivers, content providers etc.
+    * <b>R.Java</b>: It is an auto-generated file by aapt (Android Asset Packaging Tool) that contains resource IDs for all the resources of res/ directory. </br>
   
 * <b>Describe activities</b></br>
   * Activities are basically containers or windows to the user interface.</br>
