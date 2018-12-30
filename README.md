@@ -260,7 +260,7 @@ Cheat Sheet for Android Interviews
   
 * <b>onSavedInstanceState() and onRestoreInstanceState() in activity?</b></br>
   * ```OnRestoreInstanceState()``` - When activity is recreated after it was previously destroyed, we can recover the saved state from the Bundle that the system passes to the activity. Both the ```onCreate()``` and ```onRestoreInstanceState()``` callback methods receive the same Bundle that contains the instance state information. But because the ```onCreate()``` method is called whether the system is creating a new instance of your activity or recreating a previous one, you must check whether the state Bundle is null before you attempt to read it. If it is null, then the system is creating a new instance of the activity, instead of restoring a previous one that was destroyed.
-  * ```onSaveInstanceState()``` -  is a method used to store data before pausing the activity.</br>
+  * ```onSaveInstanceState()``` -  is a method used to store data. If called, this method will occur AFTER onStop() for applications targeting platforms starting with P. For applications targeting earlier platform versions this method will occur before onStop() and there are no guarantees about whether it will occur before or after onPause().</br>
   
   
   
