@@ -274,7 +274,7 @@ Cheat Sheet for Android Interviews
      * Example: Suppose there is an activity stack of A -> B -> C -> D. Now if we launch D with the launch mode as “singleTask”, the new stack will be A -> B -> C -> D as usual. 
      * Now if there is an activity stack of A -> B -> C -> D.  If we launch activity B again with the launch mode as “singleTask”, the new activity stack will be A -> B. Activities C and D will be destroyed.
    * <b>SingleInstance</b>: Same as single task but the system does not launch any activities in the same task as this activity. If new activities are launched, they are done so in a separate task. 
-     * Eg: Suppose there is an activity stack of A -> B -> C -> D. If we launch activity D again with the launch mode as “singleTask”, the new activity stack will be: 
+     * Eg: Suppose there is an activity stack of A -> B -> C -> D. If we launch activity D again with the launch mode as “singleInstance”, the new activity stack will be: 
      * Task1 — A -> B -> C  and Task2 — D</br>
  
   
