@@ -21,10 +21,17 @@ public class LargestSumSubarray {
     public static int getLargestSumFromArray(int[] arr) {
         int maxSoFar = 0;
         int maxAtEnd = 0;
+        int maxElement = Integer.MIN_VALUE;
 
         for(int i=0; i<arr.length; i++) {
             maxSoFar = Math.max(0, arr[i] + maxSoFar);
             maxAtEnd = Math.max(maxAtEnd, maxSoFar);
+            maxElement = Math.max(maxElement, arr[i]);
+        }
+        
+        // if all elements are negative return greatest negative value
+        if (maxAtEnd == 0) {
+            return maxElement;
         }
 
         return maxAtEnd;
