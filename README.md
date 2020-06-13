@@ -1169,11 +1169,11 @@ parameter to create the generic class of specific type. The T type indicates tha
 </br>
 
 ### System Design Interview Questions
-* <b>Design Whatsapp/Chat application/Facebook Messenger</b></br>
-* <b>Design a Location Tracking application</b></br>
-* <b>Design Uber/Ola</b></br>
-* <b>Design Twitter</b></br>
-* <b>Design BookMyShow</b></br>
+* Design Whatsapp/Chat application/Facebook Messenger</br>
+* Design a Location Tracking application</br>
+* Design Uber/Ola</br>
+* Design Twitter</br>
+* Design BookMyShow</br>
 
 </br>
 </br>
