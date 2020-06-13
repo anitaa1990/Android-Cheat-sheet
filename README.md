@@ -732,7 +732,7 @@ savedInstanceState.Also it won't affect the performance even if there are large 
 
 * <b> <a href="https://www.javaworld.com/article/3512039/does-java-pass-by-reference-or-pass-by-value.html#:~:text=Java%20always%20passes%20parameter%20variables,is%20passed%20to%20a%20method.&text=%E2%80%9CPassing%20by%20reference%E2%80%9D%20refers%20to,of%20the%20variable%20in%20memory.">Does Java pass by reference or pass by value?</a></b></br>
 
-* <b> <a href="https://stackify.com/java-custom-exceptions/#:~:text=Exception%20and%20RuntimeException%20provide%20constructor,sets%20it%20on%20the%20superclass.">how to implement Custom Exceptions?</a></b></br>
+* <b> <a href="https://stackify.com/java-custom-exceptions/#:~:text=Exception%20and%20RuntimeException%20provide%20constructor,sets%20it%20on%20the%20superclass.">How to implement Custom Exceptions?</a></b></br>
 
 * <b>Difference between ‘throw’ and ‘throws’ in Java Exception Handling?</b></br>
    * ```throw``` keyword is used to throw Exception from any method or static block whereas ```throws``` is used to indicate that which Exception can possibly be thrown by this method.</br>
