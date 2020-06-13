@@ -196,21 +196,22 @@ Cheat Sheet for Android Interviews
 <b>Application Context:</b> This context is tied to the lifecycle of an application. The application context can be used where you need a context whose lifecycle is separate from the current context or when you are passing a context beyond the scope of an activity.</br>
 <b>Activity Context:</b> This context is available in an activity. This context is tied to the lifecycle of an activity. The activity context should be used when you are passing the context in the scope of an activity or you need the context whose lifecycle is attached to the current context.</br>
 
-* <b> <a href="https://www.vogella.com/tutorials/AndroidLifeCycle/article.html">Application LifeCycle?</b></br>
+* <b> <a href="https://www.vogella.com/tutorials/AndroidLifeCycle/article.html">Application LifeCycle?</a></b></br>
 
-* <b> <a href="https://medium.com/@vardaansh1/an-introduction-to-android-interprocess-communication-and-common-pitfalls-ac4dfeddf89b">How to achieve Interprocess communication in android?</b></br>
+* <b> <a href="https://medium.com/@vardaansh1/an-introduction-to-android-interprocess-communication-and-common-pitfalls-ac4dfeddf89b">How to achieve Interprocess communication in android?</a></b></br>
 
-* <b> <a href="https://luboganev.dev/blog/headless-fragments/#:~:text=A%20very%20useful%20feature%20of,rotates%20the%20device%20for%20example.">Why do we use Headless fragments?</b></br>
+* <b> <a href="https://luboganev.dev/blog/headless-fragments/#:~:text=A%20very%20useful%20feature%20of,rotates%20the%20device%20for%20example.">Why do we use Headless fragments?</a></b></br>
 
-* <b> <a href="https://medium.com/@pszklarska/android-design-patterns-in-practice-builder-6b044f83e6e9">Design patterns in Android</b></br>
+* <b> <a href="https://medium.com/@pszklarska/android-design-patterns-in-practice-builder-6b044f83e6e9">Design patterns in Android</a></b></br>
 
-* <b> <a href="https://medium.com/mindorks/rxjava-operator-map-vs-flatmap-427c09678784#:~:text=FlatMap%20transforms%20the%20items%20emitted%20by%20an%20Observable%20into%20Observables.&text=So%2C%20the%20main%20difference%20between,Let's%20see%20the%20example%20code.">Map vs FlatMap operator in Rxjava?</b></br>
+* <b> <a href="https://medium.com/mindorks/rxjava-operator-map-vs-flatmap-427c09678784#:~:text=FlatMap%20transforms%20the%20items%20emitted%20by%20an%20Observable%20into%20Observables.&text=So%2C%20the%20main%20difference%20between,Let's%20see%20the%20example%20code.">Map vs FlatMap operator in Rxjava?</a></b></br>
 
-* <b> <a href="https://medium.com/better-programming/a-detailed-story-about-handler-thread-looper-message-queue-ac2cd9be0d78#:~:text=So%2C%20Android%20has%20provided%20handlers,and%20that%20thread's%20message%20queue.">Role of Handlers,Loopers and MessageQueue in Android?</b></br>
+* <b> <a href="https://medium.com/better-programming/a-detailed-story-about-handler-thread-looper-message-queue-ac2cd9be0d78#:~:text=So%2C%20Android%20has%20provided%20handlers,and%20that%20thread's%20message%20queue.">Role of Handlers,Loopers and MessageQueue in Android?</a></b></br>
 
-* <b> <a href="https://stackoverflow.com/questions/17495199/why-is-a-framelayout-used-for-fragments">Why do we prefer Framelayout for Fragments?</b></br>
+* <b> <a href="https://stackoverflow.com/questions/17495199/why-is-a-framelayout-used-for-fragments">Why do we prefer Framelayout for Fragments?</a></b></br>
 
-* <b> <a href="https://stackoverflow.com/questions/31253555/how-do-i-create-a-circular-endless-recyclerview">How to make endless circular recyclerView?</b></br>
+* <b><a href="https://stackoverflow.com/questions/31253555/how-do-i-create-a-circular-endless-recyclerview">How to make endless circular recyclerView?</a></b></br>
+
 
 * <b>What is ABI Management?</b></br>
   * Different Android handsets use different CPUs, which in turn support different instruction sets. Each combination of CPU and instruction sets has its own Application Binary Interface, or ABI. The ABI defines, with great precision, how an  application's machine code is supposed to interact with the system at runtime. You must specify an ABI for each CPU  architecture you want your app to work with. You can checkout the full specifcations [here](https://developer.android.com/ndk/guides/abis)</br>
@@ -725,13 +726,13 @@ savedInstanceState.Also it won't affect the performance even if there are large 
 * <b>Why is Java said to be platform independent?</b></br>
    * The execution of the code does not depend upon the OS</br>
 
-* <b> <a href="https://stackoverflow.com/questions/70324/java-inner-class-and-static-nested-class">Inner vs Static Nested Classes?</b></br>
+* <b> <a href="https://stackoverflow.com/questions/70324/java-inner-class-and-static-nested-class">Inner vs Static Nested Classes?</a></b></br>
 
-* <b> <a href="https://www.javatpoint.com/java-thread-pool">Why do we have Thread Pools in java?</b></br>
+* <b> <a href="https://www.javatpoint.com/java-thread-pool">Why do we have Thread Pools in java?</a></b></br>
 
-* <b> <a href="https://www.javaworld.com/article/3512039/does-java-pass-by-reference-or-pass-by-value.html#:~:text=Java%20always%20passes%20parameter%20variables,is%20passed%20to%20a%20method.&text=%E2%80%9CPassing%20by%20reference%E2%80%9D%20refers%20to,of%20the%20variable%20in%20memory.">Does Java pass by reference or pass by value?</b></br>
+* <b> <a href="https://www.javaworld.com/article/3512039/does-java-pass-by-reference-or-pass-by-value.html#:~:text=Java%20always%20passes%20parameter%20variables,is%20passed%20to%20a%20method.&text=%E2%80%9CPassing%20by%20reference%E2%80%9D%20refers%20to,of%20the%20variable%20in%20memory.">Does Java pass by reference or pass by value?</a></b></br>
 
-* <b> <a href="https://stackify.com/java-custom-exceptions/#:~:text=Exception%20and%20RuntimeException%20provide%20constructor,sets%20it%20on%20the%20superclass.">how to implement Custom Exceptions?</b></br>
+* <b> <a href="https://stackify.com/java-custom-exceptions/#:~:text=Exception%20and%20RuntimeException%20provide%20constructor,sets%20it%20on%20the%20superclass.">how to implement Custom Exceptions?</a></b></br>
 
 * <b>Difference between ‘throw’ and ‘throws’ in Java Exception Handling?</b></br>
    * ```throw``` keyword is used to throw Exception from any method or static block whereas ```throws``` is used to indicate that which Exception can possibly be thrown by this method.</br>
