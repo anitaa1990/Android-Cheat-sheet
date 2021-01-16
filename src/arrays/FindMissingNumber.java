@@ -8,7 +8,7 @@ public class FindMissingNumber {
     public static int findMissingNumbers(int[] arr, int count) {
 
         int i, total;
-        total  = (count+1)*(count+2)/2;
+        total  = (count)*(count+1)/2;
         for ( i = 0; i< count; i++) {
             total -= arr[i];
         }
