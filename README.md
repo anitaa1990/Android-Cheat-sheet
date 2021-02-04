@@ -156,7 +156,7 @@ Cheat Sheet for Android Interviews
 ### Data Structure Coding Programs
 * <b>Sorting</b></br>
    * [BubbleSort](/src/sort/BubbleSort.java)
-   * [InsertionSort](/src/sort/InsertionSort.java)
+   * [InsertionSort](/src/sort/InsertSort.java)
    * [SelectionSort](/src/sort/SelectionSort.java)
    * [QuickSort](/src/sort/QuickSort.java)
    * [MergeSort](/src/sort/MergeSort.java)
