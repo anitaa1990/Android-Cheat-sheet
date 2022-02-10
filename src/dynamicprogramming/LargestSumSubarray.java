@@ -30,8 +30,17 @@ public class LargestSumSubarray {
         return maxAtEnd;
     }
 
-
-
+    public int maxSubArray(int[] nums){
+        int best = Integer.MIN_VALUE;
+        int curr=0
+        for(int num:nums
+            {
+                curr=Math.max(num, num+curr);
+                best=Math.max(best, curr);
+            }
+            return best;
+    }
+            
     public static void main(String[] args) {
         int[] arr = {-4, 2, -5, 1, 2, 3, 6, -5, 1};
         System.out.println(getLargestSumFromArray(arr));
